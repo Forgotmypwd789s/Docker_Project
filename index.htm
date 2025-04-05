@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreWorld - Your Travel Companion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @font-face {
+        font-family: 'LucideIcons';
+        src: url(https://cdn.jsdelivr.net/npm/lucide-static@latest/font/Lucide.ttf) format('truetype');
+      }
+      .lucide {
+        font-family: 'LucideIcons';
+        font-size: 1.25rem; /* Adjust icon size as needed */
+        line-height: 1;
+      }
+      body {
+        font-family: 'Inter', sans-serif; /* Use Inter font */
+      }
+      /* Add a subtle background pattern */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d1d5db' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        z-index: -1; /* Place pattern behind content */
+        opacity: 0.5;
+      }
+    </style>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">
+                <span class="lucide mr-2">&#xea11;</span> ExploreWorld
+            </div>
+            <div class="space-x-6">
+                <a href="#destinations" class="text-gray-600 hover:text-blue-600 transition duration-300">Destinations</a>
+                <a href="#tips" class="text-gray-600 hover:text-blue-600 transition duration-300">Travel Tips</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="relative bg-gradient-to-r from-blue-500 to-purple-600 text-white py-24 px-6 text-center">
+        <div class="absolute inset-0 bg-black opacity-30"></div> <div class="relative z-10">
+            <h1 class="text-5xl font-bold mb-4">Discover Your Next Adventure</h1>
+            <p class="text-xl mb-8">Explore breathtaking destinations and get expert travel tips.</p>
+            <a href="#destinations" class="bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300">Get Started</a>
+        </div>
+    </section>
+
+    <section id="destinations" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Featured Destinations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/600x400/a0aec0/ffffff?text=Tropical+Paradise" alt="Tropical Paradise" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Tropical Paradise</h3>
+                        <p class="text-gray-600 mb-4">Relax on pristine beaches and swim in turquoise waters.</p>
+                        <a href="#" class="text-blue-500 hover:text-blue-700 font-medium">Learn More &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/600x400/718096/ffffff?text=Mountain+Retreat" alt="Mountain Retreat" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Mountain Retreat</h3>
+                        <p class="text-gray-600 mb-4">Explore stunning mountain landscapes and hiking trails.</p>
+                        <a href="#" class="text-blue-500 hover:text-blue-700 font-medium">Learn More &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/600x400/4a5568/ffffff?text=City+Exploration" alt="City Exploration" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Urban Adventure</h3>
+                        <p class="text-gray-600 mb-4">Discover vibrant city life, culture, and cuisine.</p>
+                        <a href="#" class="text-blue-500 hover:text-blue-700 font-medium">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Helpful Travel Tips</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="text-blue-500 mb-4"><span class="lucide text-4xl">&#xea6f;</span></div> <h3 class="text-xl font-semibold mb-2">Pack Smart</h3>
+                    <p class="text-gray-600">Travel light and bring only the essentials. Roll your clothes to save space.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                     <div class="text-green-500 mb-4"><span class="lucide text-4xl">&#xea73;</span></div> <h3 class="text-xl font-semibold mb-2">Stay Connected</h3>
+                    <p class="text-gray-600">Get a local SIM card or an international plan to stay online.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                     <div class="text-purple-500 mb-4"><span class="lucide text-4xl">&#xea9f;</span></div> <h3 class="text-xl font-semibold mb-2">Budget Wisely</h3>
+                    <p class="text-gray-600">Plan your expenses and look for deals on flights and accommodation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center max-w-3xl">
+             <div class="text-blue-600 mb-4"><span class="lucide text-4xl">&#xeae0;</span></div> <h2 class="text-3xl font-bold mb-4 text-gray-800">About ExploreWorld</h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                We are passionate travelers dedicated to helping you discover the world. Our mission is to provide inspiration, practical tips, and resources to make your travel dreams a reality. Join our community and start exploring!
+            </p>
+        </div>
+    </section>
+
+     <section id="contact" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-6 max-w-xl">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Get In Touch</h2>
+            <form class="bg-white p-8 rounded-lg shadow-lg space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Your Name">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="your.email@example.com">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="How can we help?"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-lg transition duration-300 w-full md:w-auto">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 ExploreWorld. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
